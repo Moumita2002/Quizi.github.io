@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>QuiziBizi</title>
+        <link rel="stylesheet" type="text/css" href="quizi.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="faviconi/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="faviconi/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="faviconi/favicon-16x16.png">
+        <link rel="manifest" href="faviconi/site.webmanifest">
+        <link rel="mask-icon" href="faviconi/safari-pinned-tab.svg" color="#5bbad5">
+        <meta name="msapplication-TileColor" content="#da532c">
+        <meta name="theme-color" content="#ffffff">
+    </head>
+    <body>
+        <div class="menu">
+            <a class="o" href="index.html">Home</a>
+            <a class="o" href="about.html">About</a>
+        </div>
+        <!-- Question Box -->
+        <div class="container">
+            <header>
+                <div class="quiz">Quizi</div>
+            </header>
+
+            <section>
+
+                <!-- Questions -->
+                <div class="question">
+                    <span class="q">What is the full form of HTML?</span>
+                </div>
+
+                <!-- Options -->
+                <div class="option_list">
+                    <button class="option" onclick=" " id="option1">
+                        Hyper Text Markup Language    
+                    </button>
+                    <button class="option" id="option2">
+                        Hidden Text Marking Level
+                    </button>  
+                    <button class="option" id="option3">
+                        Hyper Text Marking Language 
+                    </button>
+                    <button class="option" id="option4">
+                        Hyper Text Making Language
+                    </button>
+                </div>
+            </section>
+
+            <!-- Total questions and submit -->
+            <footer>
+                <div class="tot_ques">
+                    <span>Question No.: 2/5</span>
+                </div>
+                <button class="submit">Submit</button>
+            </footer>
+        </div>
+
+        <!--Result Box-->
+        <div id="text" class="result">
+            
+            <h2>Your Score:</h2> 
+            <button class="restart_button" onclick="location.reload()">Restart</button>
+        </div>
+        <!--<script src="quizi.js"></script>-->
+        <script src="quiziBizi.js"></script>
+    </body>
+</html>

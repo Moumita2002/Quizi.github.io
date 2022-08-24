@@ -1,0 +1,244 @@
+body{
+    animation-name: background_img;
+    animation-duration: 20s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes background_img {
+    0%{
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(45deg,rgb(54, 121, 57) 50%, black 50%);
+    }
+    100%
+    {
+        height: 100vh;
+        width: 100vw;
+        background-image: linear-gradient(45deg, black 50%, rgb(54, 121, 57) 50%);
+    }
+}
+
+.menu{
+    margin-right:50px;
+    padding:10px;
+    float: right;
+}
+.menu .o{
+    text-decoration: none;
+    color:rgb(244, 232, 211);
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    font-weight:bolder;
+    border-bottom: 2px solid crimson;
+}
+.menu .o:hover{
+    text-decoration: none;
+    color:rgb(244, 232, 211);
+    margin:10px;
+    padding:10px;
+    font-size:20px;
+    font-weight:bolder;
+    background-color: crimson;
+}
+
+.container
+{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+}
+
+.container{
+    width: 620px;
+    background-color:rgb(22, 21, 21);
+    border-radius: 25px;
+    opacity: 0.9;
+    border: 10px solid rgb(116, 163, 46);
+    color:bisque;
+}
+.container header{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container header .quiz{
+    text-decoration: underline;
+    font-size:50px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color:rgb(53, 102, 104);
+    font-weight: 800;
+    padding:20px;
+}
+
+.container section{
+    padding:10px;
+    margin-left:10px;
+    margin-right:5px;
+}
+.container section .question{
+    margin-left:15px;
+    padding:10px;
+    margin-right: 12px;
+}
+.container section .question .q{
+
+    font-size: 28px;
+    font-weight: 800;
+    color:darkgray;
+}
+
+.container section .question .que{
+    
+    font-size: 22px;
+    font-weight: bolder;
+    color:darkgray;
+}
+
+.container section .question #info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:burlywood;
+    font-size: large;
+    font-weight: bolder;
+}
+.container section .question #info1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color:burlywood;
+    font-size: large;
+    font-weight: bolder;
+}
+.container section .question #info1 .a1{
+    text-decoration: none;
+    color:aliceblue
+}
+
+.container section .option_list{
+    padding:25px;
+}
+.container section .option_list .option{
+    border:3px solid crimson;
+    border-radius: 25px;
+    padding:15px;
+    margin-right:20px;
+    margin-bottom:20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor:pointer;
+    font-weight: 700px;
+    font-size:20px;
+    transition: all 1s ease;
+    background:none;
+    color:bisque;
+    width: 500px;
+}
+
+.container section .option_list .option:hover{
+    border: 3px solid whitesmoke;
+    color:wheat;
+}
+
+.container footer{
+    height:50px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:15px;
+    margin-right:15px;
+}
+
+.container footer .tot_ques {
+    margin-left:15px;
+    font-size:25px;
+    font-weight:bolder;
+    color:gray;
+    font-style: italic;
+}
+
+.container footer .submit{
+    padding:15px;
+    margin-bottom:30px;
+    border-radius: 25px;
+    background-color: darkseagreen;
+    border:3px solid indigo;
+    color:indigo;
+    font-size:large;
+    font-weight:bolder;
+    width:170px;
+    transition: all 1s ease;
+}
+
+.container footer .submit:hover{
+    cursor:pointer;
+    background-color: indianred;
+}
+
+#text{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    width: 620px;
+    background-color:rgb(22, 21, 21);
+    border-radius: 25px;
+    opacity: 0.9;
+    border: 10px solid rgb(116, 163, 46);
+    color:bisque;
+    
+}
+#text h1{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    margin:30px;
+    padding:30px;
+    color:crimson;
+    font-weight: bolder;
+}
+#text h2{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size:30px;
+    margin-top:30px;
+    padding:30px;
+    color:bisque;
+    font-weight: bolder;
+
+}
+#text h3{
+    font-size: 50px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:0px;
+    padding:30px;
+}
+#text .restart_button{
+    padding:20px;
+    border: 3px solid indigo;
+    border-radius: 25px;
+    font-size:large;
+    background-color: darkseagreen;
+    color:indigo;
+    font-weight:bold;
+    width:200px;
+    cursor:pointer;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-left:210px;
+    margin-bottom:100px;
+    padding:15px;
+}
+.result{
+    display: none;
+}
