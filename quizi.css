@@ -320,4 +320,9 @@ body{
         width:150px;
         margin-left:77px;
     }
+    .container section .question .que1{
+        font-size: 18px;
+        font-weight: bolder;
+        color:darkgray;
+    }
 }
