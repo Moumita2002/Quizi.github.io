@@ -244,7 +244,7 @@ body{
 }
 @media screen and (max-width:768px) {
     .container{
-        margin-top:50px;
+        top:60%;
         width: 330px;
         height:580px;
         border: 4px solid rgb(116, 163, 46);
